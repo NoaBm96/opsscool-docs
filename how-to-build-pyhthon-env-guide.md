@@ -17,8 +17,8 @@ This is a short tutorial on how to build you python programming environement for
 - Download/Install remote ssh extention from [here](vscode:extension/ms-vscode-remote.remote-ssh)
 - It should loook like this: 
   ![](https://code.visualstudio.com/assets/docs/remote/ssh-tutorial/remote-ssh-extension.png "remote-ssh-extension")
-- With the Remote - SSH extension installed, you will see a new Status bar item at the far left:
-  ![](https://code.visualstudio.com/assets/docs/remote/ssh-tutorial/remote-status-bar.png "remote-status-bar")
+- With the Remote - SSH extension installed, you will see a new Status bar item at the far left:  
+![](https://code.visualstudio.com/assets/docs/remote/ssh-tutorial/remote-status-bar.png "remote-status-bar")
 - The Remote Status bar item can quickly show you in which context VS Code is running (local or remote) and clicking on the item will bring up the Remote - SSH commands.
   ![](https://code.visualstudio.com/assets/docs/remote/ssh-tutorial/remote-ssh-commands.png "remote-ssh-commands")
 - Select the remote status bar -> Remote-SSH: Connect to Host... -> Configure SSH Hosts -> Select you ssh config file
