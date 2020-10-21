@@ -15,7 +15,7 @@ This is a short tutorial on how to build you python programming environement for
 
 ### Phase 3 - Install and configure remote ssh extentio
 - Download/Install remote ssh extention from [here](vscode:extension/ms-vscode-remote.remote-ssh)
-- It should loook like this: 
+- It should look like this: 
   ![](https://code.visualstudio.com/assets/docs/remote/ssh-tutorial/remote-ssh-extension.png "remote-ssh-extension")
 - With the Remote - SSH extension installed, you will see a new Status bar item at the far left:  
 ![](https://code.visualstudio.com/assets/docs/remote/ssh-tutorial/remote-status-bar.png "remote-status-bar")
