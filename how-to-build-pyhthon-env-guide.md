@@ -4,10 +4,10 @@ This is a short tutorial on how to build you python programming environement for
 
 ### Phase 1 - Create an EC2 instance
 - Create your python EC2 instance using this AMI **_opsschool-oct-2020-base-ubuntu_** (AMI ID: *ami-011025cab7de3bd7e*)
-> Make sure you:
->  - Open port 22 for ssh access
->  - Download the SSH key and save it in your opsschool projects directory on your computer
->  - Save you server public DNS/IP address
+    > Make sure you:
+    >  - Open port 22 for ssh access
+    >  - Download the SSH key and save it in your opsschool projects directory on your computer
+    >  - Save you server public DNS/IP address
 
 ### Phase 2 - Install Visual Studio Code 
 - Download VSC [here](https://code.visualstudio.com/Download)
