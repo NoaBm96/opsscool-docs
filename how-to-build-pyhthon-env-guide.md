@@ -16,11 +16,11 @@ This is a short tutorial on how to build you python programming environement for
 ### Phase 3 - Install and configure remote ssh extentio
 - Download/Install remote ssh extention from [here](vscode:extension/ms-vscode-remote.remote-ssh)
 - It should loook like this: 
-- ![alt text](https://code.visualstudio.com/assets/docs/remote/ssh-tutorial/remote-ssh-extension.png "remote-ssh")
+  ![alt text](https://code.visualstudio.com/assets/docs/remote/ssh-tutorial/remote-ssh-extension.png "remote-ssh")
 - With the Remote - SSH extension installed, you will see a new Status bar item at the far left:
-- ![alt text](https://code.visualstudio.com/assets/docs/remote/ssh-tutorial/remote-status-bar.png "remote-ssh")
+  ![alt text](https://code.visualstudio.com/assets/docs/remote/ssh-tutorial/remote-status-bar.png "remote-ssh")
 - The Remote Status bar item can quickly show you in which context VS Code is running (local or remote) and clicking on the item will bring up the Remote - SSH commands.
-- ![alt text](https://code.visualstudio.com/assets/docs/remote/ssh-tutorial/remote-ssh-commands.png "remote-ssh")
+  ![alt text](https://code.visualstudio.com/assets/docs/remote/ssh-tutorial/remote-ssh-commands.png "remote-ssh")
 - Select the remote status bar -> Remote-SSH: Connect to Host... -> Configure SSH Hosts -> Select you ssh config file
 - Edit the ssh config file and set your host alias, host address, user name, and ssh key path like this:
 ```
@@ -29,7 +29,7 @@ Host opsschool
   IdentityFile /home/mickey/private_keys/opssschool.pem
   User ubuntu
 ```
-- Select the remote status bar -> Remote-SSH: Connect to Host... -> You host name
+- Select the remote status bar -> Remote-SSH: Connect to Host... -> Your host name
 - VSC should open on your remote host and you should be good to go! 
 
 ### Refrences
