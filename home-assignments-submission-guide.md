@@ -55,8 +55,8 @@ As there are steps that should be taken continuously (as you make more changes a
 
     ```
     > **IMPORTANT NOTE:** The `--global` flag means this would be your git configuration in EVERY git repository you will work on in this PC. \
-    > If you are using addtional git user on your PC (work related for example) you can use `git config --local` on a specific repository to have thi configuration only apply to it and not the entire PC.
-1. Go to Github.com, Fork the repository your are aksed to submit homework to. once forked, the new repo will appear under your user. [Read here](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo) for more information on forking a repo on Github.
+    > If you are using additional git user on your PC (work related for example) you can use `git config --local` on a specific repository to have this configuration only apply to it and not the entire PC.
+1. Go to Github.com, Fork the repository your are asked to submit homework to. once forked, the new repo will appear under your user. [Read here](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo) for more information on forking a repo on Github.
 1. Clone the new repo to your pc
 
 #### Add collaborators
