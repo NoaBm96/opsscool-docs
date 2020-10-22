@@ -24,11 +24,11 @@ Go over the 2 sessions of the OpsSchool git workshop - make sure you understand 
 ### The Pull request review flow explained
 The steps below will be used to submit home assignments in OpsSchool in order of precedence. 
 
-As there are steps that should be taken continously (as you make more changes and more home assignments) use the legend below to understand when each step should be used:
+As there are steps that should be taken continuously (as you make more changes and more home assignments) use the legend below to understand when each step should be used:
 
 * 🔂 Step that should be taken once during the course
 * 🔁 Step that shoukd be taken on each new home assignment/project/feature added.
-* 🔁🔁🔁 Step that should be taken continously for EVERY chnage you make
+* 🔁🔁🔁 Step that should be taken continuously for EVERY change you make
 
 
 ### The flow
@@ -38,7 +38,7 @@ As there are steps that should be taken continously (as you make more changes an
 * [Before starting a new change 🔁](#before-starting-a-new-change)
 * [Local + remote flow 🔁🔁🔁](#basic-local--remote-flow)
 * [Pull request 🔁](#how-to-open-a-pull-request)
-* [Making changes 🔁🔁🔁](#making-changes)
+* [Making changes 🔁🔁🔁](#making-additional-changes)
 * [Merge! 🔁](#merge)
 
 
@@ -55,7 +55,7 @@ As there are steps that should be taken continously (as you make more changes an
 
     ```
     > **IMPORTANT NOTE:** The `--global` flag means this would be your git configuration in EVERY git repository you will work on in this PC. \
-    > If you are using addtional git user on your PC (work related for example) you can use `git config --local` on a specific repository to have thiד configuration only apply to it and not the entire PC.
+    > If you are using addtional git user on your PC (work related for example) you can use `git config --local` on a specific repository to have thi configuration only apply to it and not the entire PC.
 1. Go to Github.com, Fork the repository your are aksed to submit homework to. once forked, the new repo will appear under your user. [Read here](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo) for more information on forking a repo on Github.
 1. Clone the new repo to your pc
 
@@ -92,7 +92,7 @@ In order for another user to review your code, the user must first be added as a
 
 
 1. Code! Make changes, add files, write your best solution possible!
-1. Ready to have your code reviewed? first run `git status` and use `git add` to select only the files that are relevant for this assignment
+1. Ready to have your code reviewed? first run `git status` and use `git add` to select only the files that are relevant for this assignment (`git add my-file-name`)
 1. Run `git commit` command with the `-m` flag and provide a MEANINGFUL description of your change
     ```$sh
     $ git commit -m "Full running solution for coidng home assignment #3"
@@ -118,9 +118,9 @@ Now let's open a Pull request and assign it to your reviewer.
 
 
 #### Making additional changes
-As in many code reviews, you may need to change or adjust your code per the reviewer's comments. this can be easily done simply by making your changes and pushing to your branch as described in [Basic local + remote flow]((#basic-local--remote-flow)) section.
+As in many code reviews, you may need to change or adjust your code per the reviewer's comments. this can be easily done simply by making your changes and pushing to your branch as described in [Basic local + remote flow](#basic-local--remote-flow) section.
 
-> Don't worry - you do not need to update the Pull request nor open a new one. Once your changes are pushed it will be imiidiately be reflected in the opened Pull request. It is worth thouh to update your reviewer on your changes by mentioning him/her (e.g. `@reviewer_user`) in the Pull request comments.
+> Don't worry - you do not need to update the Pull request nor open a new one. Once your changes are pushed it will be immediately be reflected in the opened Pull request. It is worth to update your reviewer on your changes by mentioning him/her (e.g. `@reviewer_user`) in the Pull request comments.
 
 #### Merge!
 Is the code Code review done and approved by the instructor?
