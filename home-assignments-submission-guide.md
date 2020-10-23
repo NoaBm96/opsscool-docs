@@ -118,7 +118,7 @@ Now let's open a Pull request and assign it to your reviewer.
 
 
 #### Making additional changes
-As in many code reviews, you may need to change or adjust your code per the reviewer's comments. this can be easily done simply by making your changes and pushing to your branch as described in [Basic local + remote flow]((#basic-local--remote-flow)) section.
+As in many code reviews, you may need to change or adjust your code per the reviewer's comments. this can be easily done simply by making your changes and pushing to your branch as described in [Basic local + remote flow](#basic-local--remote-flow) section.
 
 > Don't worry - you do not need to update the Pull request nor open a new one. Once your changes are pushed it will be imiidiately be reflected in the opened Pull request. It is worth thouh to update your reviewer on your changes by mentioning him/her (e.g. `@reviewer_user`) in the Pull request comments.
 
