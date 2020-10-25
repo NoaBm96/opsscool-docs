@@ -1,6 +1,6 @@
 # Building your python coding environment 
 
-This is a short tutorial on how to build your python programming environement for OpsSchool coding sessions and home assignmnets. 
+This is a short tutorial on how to build your python programming environment for OpsSchool coding sessions and home assignments. 
 
 ### Phase 1 - Create an EC2 instance
 - Create your python EC2 instance using this AMI **_opsschool-oct-2020-base-ubuntu_** (AMI ID: *ami-011025cab7de3bd7e*)
@@ -13,11 +13,11 @@ This is a short tutorial on how to build your python programming environement fo
 - Download VSC [here](https://code.visualstudio.com/Download)
 - Install it on your computer
 
-### Phase 3 - Install and configure remote ssh extentioמ
-- Download/Install remote ssh extention from [here](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh)
+### Phase 3 - Install and configure remote ssh extension
+- Download/Install remote ssh extension from [here](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh)
 - It should look like this: 
   ![](https://code.visualstudio.com/assets/docs/remote/ssh-tutorial/remote-ssh-extension.png "remote-ssh-extension")
-- With the Remote - SSH extension installed, you will see a new Status bar item at the far left:  
+- With the Remote - SSH extension installed, you will see a new status bar item at the far left:  
 ![](https://code.visualstudio.com/assets/docs/remote/ssh-tutorial/remote-status-bar.png "remote-status-bar")
 - The Remote Status bar item can quickly show you in which context VS Code is running (local or remote) and clicking on the item will bring up the Remote - SSH commands.
   ![](https://code.visualstudio.com/assets/docs/remote/ssh-tutorial/remote-ssh-commands.png "remote-ssh-commands")
