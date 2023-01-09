@@ -16,6 +16,7 @@ Use the following strategies to limit root user access to your account:
 
 - **Create an IAM** user for day-to-day access to your account. Follow the instructions [here](https://docs.aws.amazon.com/IAM/latest/UserGuide/getting-set-up.html#create-an-admin)
 - Eliminate the use of root access keys
+> ⚠️ Important Note: You should never push your AWS key into a publicly visible repo (github or other)
 - **Use an MFA** device for the root user of your account
 
 Read more about how to protect your account's root user [here](https://docs.aws.amazon.com/accounts/latest/reference/best-practices-root-user.html)
