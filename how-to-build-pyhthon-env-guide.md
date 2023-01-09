@@ -1,36 +1,43 @@
 # Building your python coding environment 
 
-This is a short tutorial on how to build your python programming environment for OpsSchool coding sessions and home assignments. 
+At OpsSchool, we use an AWS remote IDE environment called Cloud9 for our home and class assignments. We do this to avoid the different compatability problems and frustrations when working with the local OS env of each student.
 
-### Phase 1 - Create an EC2 instance
-- Create your python EC2 instance using this AMI **_opsschool-oct-2020-base-ubuntu_** (AMI ID: *ami-011025cab7de3bd7e*)
-    > ⚠️ Make sure you:
-    >  - Open port 22 for ssh access
-    >  - Download the SSH key and save it in your opsschool projects directory on your computer
-    >  - Save you server public DNS/IP address
+In order to setup Cloud9 you must follow the instructions in this blog:
+https://aws.amazon.com/blogs/architecture/field-notes-use-aws-cloud9-to-power-your-visual-studio-code-ide
 
-### Phase 2 - Install Visual Studio Code 
+## We also summarized the instructions here for your convenience
+
+### *Important notes*
+
+⚠️ You should be aware that these remote environment take compute(EC2 instance) and disk (gp2 volume) resources which you will be charged on their usage. Try to utilize the [aws free tier](https://aws.amazon.com/free) as much as possible and take these charges into consideration
+⚠️ For setting up the Cloud9 environment, we recommend **skipping the automated cloudfromation** offered in the blog and instead just create it manually.
+
+### First Step - Configure Cloud9 env in your personal account
+1. Sign in to your AWS account
+2. Search for **Cloud9** service in the search bar
+    ![image](https://user-images.githubusercontent.com/3054733/211280315-13ba1990-3073-4106-8d43-b77de1cdf86e.png)
+3. Click "Create environment"
+4. In the create environment screen fill in the required details: \
+    **Name:** Give it a meaningful name something like: "opsschool9-dev-env" \
+    **Environment type:** Keep the default to "New EC2 instance" \
+    **Instance type:** Select the instance type you wish to use. Remember that smaller instances cost less but can also be slow and mis perform. \
+    **Platform:** Keep the default pick of "Amazon Linux 2" \
+    **Timeout:** We recommend a minimum timeout of 1 hour to be picked 
+5. Click "Create" to create the environment
+
+### Step 2 - Install Visual Studio Code 
 - Download VSC [here](https://code.visualstudio.com/Download)
 - Install it on your computer
 
-### Phase 3 - Install and configure remote ssh extension
-- Download/Install remote ssh extension from [here](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh)
-- It should look like this: 
-  ![](https://code.visualstudio.com/assets/docs/remote/ssh-tutorial/remote-ssh-extension.png "remote-ssh-extension")
-- With the Remote - SSH extension installed, you will see a new status bar item at the far left:  
-![](https://code.visualstudio.com/assets/docs/remote/ssh-tutorial/remote-status-bar.png "remote-status-bar")
-- The Remote Status bar item can quickly show you in which context VS Code is running (local or remote) and clicking on the item will bring up the Remote - SSH commands.
-  ![](https://code.visualstudio.com/assets/docs/remote/ssh-tutorial/remote-ssh-commands.png "remote-ssh-commands")
-- Select the **remote status bar** -> **Remote-SSH: Connect to Host...** -> **Configure SSH Hosts** -> **Select your ssh config file**
-- Edit the ssh config file and set your host alias, host address, user name, and ssh key path like this:
-    ```
-    Host opsschool
-      HostName 123.123.123.123
-      IdentityFile /home/mickey/private_keys/opssschool.pem
-      User ubuntu
-    ```
-- Select the **remote status bar** -> **Remote-SSH: Connect to Host...** -> **Your host name**
-- VSC should open on your remote host and you should be good to go! 
+### Follow rest of the steps in AWS Blog link
+https://aws.amazon.com/blogs/architecture/field-notes-use-aws-cloud9-to-power-your-visual-studio-code-ide
+
+Steps will be:
+- Installing and configuring Remote – SSH Extension
+- Installing the Session Manager plugin for the AWS CLI
+- Creating an SSH key pair to use with remote IDE instance
+- Add a shutdown script that will save you money when the IDE is closed and not in use
+- Connect and test your connection
 
 ### Refrences
 - Using and configuring Remote SSH for VSC [here](https://code.visualstudio.com/docs/remote/ssh-tutorial)
