@@ -34,4 +34,7 @@ Since we'll only be using `us-east-1` region you can disable all other regions u
 It's a best practice to actively monitor your account and its resources to detect any unusual activity. 
 
 Use the following strategies to monitor your account:
-- Use [this guide](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/monitor_estimated_charges_with_cloudwatch.html) to create a billing alarm to monitor your estimated AWS charges to receive automated notifications when your bill exceeds thresholds you define. 
+- Use [this guide](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/monitor_estimated_charges_with_cloudwatch.html) to create a `billing alarm` to monitor your estimated AWS charges to receive automated notifications when your bill exceeds thresholds you define. 
+- Run `cost explorer` reports regularly to control your spend, and how you're doing with your credits. You can learn how to enable and run cost explorer reports [here](https://docs.aws.amazon.com/cost-management/latest/userguide/ce-what-is.html). We recommand running at least a Cost breakdown report for the last `6 months` by `service` and by `charge type`.
+Example for a by service report:
+![alt text](./cost%20explorer.png)
