@@ -34,7 +34,6 @@ As there are steps that should be taken continuously (as you make more changes a
 ### The flow
 
 * [Setup 🔂](#initial-setup)
-* [Add collaborators 🔂](#add-collaborators)
 * [Before starting a new change 🔁](#before-starting-a-new-change)
 * [Local + remote flow 🔁🔁🔁](#basic-local--remote-flow)
 * [Pull request 🔁](#how-to-open-a-pull-request)
@@ -58,12 +57,6 @@ As there are steps that should be taken continuously (as you make more changes a
     > If you are using additional git user on your PC (work related for example) you can use `git config --local` on a specific repository to have this configuration only apply to it and not the entire PC.
 1. Go to Github.com, Fork the repository your are asked to submit homework to. once forked, the new repo will appear under your user. [Read here](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo) for more information on forking a repo on Github.
 1. Clone the new repo to your pc
-
-#### Add collaborators
-In order for another user to review your code, the user must first be added as a collaborator in your personal repo.
-1. On your personal repo page on Github.com click `:gear: settings` --> `Manage access`
-1. Click on  `Invite a collaborator`
-1. Find each of the users of your fellow student reviewer & instructor reviewer and add them as collaborators
 
 #### Before starting a new change
 1. Make sure your master branch is up to date:
@@ -113,8 +106,8 @@ Now let's open a Pull request and assign it to your reviewer.
 1. Once branch select, click the "pull request" button.
 1. On the right pane you select your branch and on the left pane you select your personal repo master branch. 
    > The selected "base repository" will always be *<your-user>/<repo-name>* as we will not merge to the base repo (the one you forked from) in this course.
-1. Under "Reviewers" in the right menu, you should put your reviewer username (user must first accept your invitation to collaborate otherwise the user won't appear for selection)
-1. Now click "Create pull request". the reviewer would be informed (usually by mail) that he needs to review this Pull request and you will be able to collaborate using comments.
+1. Under "Reviewers" in the right menu, you should put your reviewer's username as this is how they will get notified on your changes
+1. Now click "Create pull request". the reviewer would be informed (usually by mail) that they needd to review this Pull request and you will collaborate using using the comments within the Pull reuqest page.
 
 
 #### Making additional changes
